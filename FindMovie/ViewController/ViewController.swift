@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         layout.minimumInteritemSpacing = 16
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .systemBackground
+        collectionView.backgroundColor = .systemGray5
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false

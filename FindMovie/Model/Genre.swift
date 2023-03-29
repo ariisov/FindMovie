@@ -14,7 +14,7 @@ struct Genre: Decodable {
     static var all: [Genre] = []
     
     static func fetchAllGenres(completion: @escaping () -> Void) {
-        let url = URL(string: "https://api.themoviedb.org/3/genre/movie/list?api_key=       &language=en-US")!
+        let url = URL(string: "https://api.themoviedb.org/3/genre/movie/list?api_key=\("")&language=en-US")!
         
         AF.request(url).responseDecodable(of: GenreListResponse.self) { response in
             switch response.result {
