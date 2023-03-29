@@ -26,9 +26,9 @@ Go to the TMDb website and create an account.
 Once you have created an account, go to your account settings and click on the API section.
 Generate a new API key.
 Copy your API key and paste it into the apiKey constant in the ViewController.swift file.
-swift
-Copy code
+
 private let apiKey = "YOUR_API_KEY_HERE"
+
 Architecture
 
 The app uses a simple Model-View-Controller (MVC) architecture. The ViewController serves as the controller and is responsible for coordinating the app's data and views. The Movie and Genre structs serve as models and represent the data returned by the TMDb API. The MovieCell subclass of UICollectionViewCell serves as the view for the Movie model and is responsible for displaying the movie data.
