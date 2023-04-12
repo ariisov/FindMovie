@@ -57,7 +57,7 @@ class MovieCell: UICollectionViewCell {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 100),
+            imageView.widthAnchor.constraint(equalToConstant: 150),
             imageView.heightAnchor.constraint(equalToConstant: 150),
             
             titleLabel.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 16),

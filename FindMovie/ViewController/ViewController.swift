@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    let apiKey = "YOUR_API_KEY_HERE"
+    let apiKey = "55e5dc945ae5c9de15c9db25c1fdea69"
     var movies = [Movie]()
     
     lazy var searchBar: UISearchBar = {
@@ -46,6 +46,9 @@ class ViewController: UIViewController {
     // MARK: - Lifecycle methods
     
     override func viewDidLoad() {
+        navigationItem.title = "FindMovie"
+        view.backgroundColor = .white
+        navigationController?.navigationBar.prefersLargeTitles = false
         super.viewDidLoad()
         setupViews()
     }
@@ -53,7 +56,6 @@ class ViewController: UIViewController {
     // MARK: - Private methods
     
     private func setupViews() {
-        view.backgroundColor = .systemBackground
         
         view.addSubview(searchBar)
         NSLayoutConstraint.activate([

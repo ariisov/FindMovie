@@ -12,13 +12,13 @@ import Alamofire
 class MovieDetailsViewController: UIViewController {
     let movie: Movie
     
-    lazy var scrollView: UIScrollView = {
+    let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
     }()
     
-    lazy var imageView: UIImageView = {
+    let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -27,7 +27,7 @@ class MovieDetailsViewController: UIViewController {
     }()
     
     
-    lazy var titleLabel: UILabel = {
+    let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 24)
         label.numberOfLines = 0
@@ -35,7 +35,7 @@ class MovieDetailsViewController: UIViewController {
         return label
     }()
     
-    lazy var ratingLabel: UILabel = {
+    let ratingLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .systemYellow
@@ -43,7 +43,7 @@ class MovieDetailsViewController: UIViewController {
         return label
     }()
     
-    lazy var overviewLabel: UILabel = {
+    let overviewLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
         label.numberOfLines = 0
@@ -69,6 +69,7 @@ class MovieDetailsViewController: UIViewController {
     private func setupViews() {
         view.backgroundColor = .white
         view.addSubview(scrollView)
+        scrollView.isPagingEnabled = true
         scrollView.addSubview(imageView)
         scrollView.addSubview(titleLabel)
         scrollView.addSubview(ratingLabel)
