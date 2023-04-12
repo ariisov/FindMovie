@@ -35,4 +35,4 @@ The app uses a simple Model-View-Controller (MVC) architecture. The ViewControll
 
 Credits
 
-This app was created by [Your Name Here] as a sample project for educational purposes. The app uses the TMDb API to retrieve movie data.
+This app was created by Bulat as a sample project for educational purposes. The app uses the TMDb API to retrieve movie data.
